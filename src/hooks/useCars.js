@@ -5,8 +5,6 @@ const UseCars = () => {
 
     const [state, setState] = React.useContext(AppContext);
 
-    console.log("state==>", state);
-
     function incrementPrice(selectedID)  {
         const cars = Object.assign({}, state.cars);
         cars[selectedID].price = cars[selectedID].price + 1;

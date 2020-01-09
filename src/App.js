@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ProductList from "./components/productList";
-import {AppProvider, CarsProvider} from "./context/CarsContext";
+import {AppProvider} from "./context/CarsContext";
 
 class App extends React.Component{
 
