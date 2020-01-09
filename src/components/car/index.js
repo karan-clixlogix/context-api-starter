@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
 
 const Car = props => (
     <Fragment>
@@ -7,6 +7,6 @@ const Car = props => (
         <button onClick={props.incrementPrice}>&uarr;</button>
         <button onClick={props.decrementPrice}>&darr;</button>
     </Fragment>
-);
+)
 
-export default Car;
+export default Car

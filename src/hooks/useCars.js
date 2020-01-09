@@ -1,23 +1,22 @@
-import React from 'react';
-import {AppContext } from './../context/CarsContext'
+import React from 'react'
+import { AppContext } from './../context/CarsContext'
 
 const UseCars = () => {
+    const [state, setState] = React.useContext(AppContext)
 
-    const [state, setState] = React.useContext(AppContext);
-
-    function incrementPrice(selectedID)  {
-        const cars = Object.assign({}, state.cars);
-        cars[selectedID].price = cars[selectedID].price + 1;
-        setState((prevState)=> {
-            return {...prevState, cars}
-        });
+    function incrementPrice(selectedID) {
+        const cars = Object.assign({}, state.cars)
+        cars[selectedID].price = cars[selectedID].price + 1
+        setState(prevState => {
+            return { ...prevState, cars }
+        })
     }
-    function decrementPrice(selectedID)   {
-        const cars = Object.assign({}, state.cars);
-        cars[selectedID].price = cars[selectedID].price - 1;
-        setState((prevState)=> {
-            return {...prevState, cars}
-        });
+    function decrementPrice(selectedID) {
+        const cars = Object.assign({}, state.cars)
+        cars[selectedID].price = cars[selectedID].price - 1
+        setState(prevState => {
+            return { ...prevState, cars }
+        })
     }
     return {
         incrementPrice,
@@ -25,6 +24,6 @@ const UseCars = () => {
         cars: state.cars,
         users: state.users,
     }
-};
+}
 
-export default UseCars;
+export default UseCars

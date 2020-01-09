@@ -18,7 +18,7 @@
         "fix:other": "yarn prettier --write",
         "fix:code": "yarn test:code --fix",
         "fix": "yarn fix:code && yarn fix:other",
-        "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+        "prettier": "prettier \"**/*.{json,md,scss,yaml,yml,js,jsx}\"",
         "test:other": "yarn prettier --list-different",
         "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx ."
     },

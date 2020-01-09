@@ -1,10 +1,9 @@
-import React from 'react';
+import React from 'react'
 import useCars from './../../hooks/useCars'
-import Car from "../car";
+import Car from '../car'
 
 const Cars = () => {
-
-    const { cars, incrementPrice, decrementPrice } = useCars();
+    const { cars, incrementPrice, decrementPrice } = useCars()
 
     return (
         <div>
@@ -18,9 +17,8 @@ const Cars = () => {
                     decrementPrice={() => decrementPrice(carID)}
                 />
             ))}
-
         </div>
-    );
-};
+    )
+}
 
-export default Cars;
+export default Cars
