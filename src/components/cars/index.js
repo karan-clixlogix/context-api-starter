@@ -5,6 +5,7 @@ import Car from '../car'
 const Cars = () => {
     const { cars, incrementPrice, decrementPrice } = useCars()
 
+  console.log("==cars called==>")
     return (
         <div>
             <h1>Cars</h1>
